@@ -1,0 +1,62 @@
+// font
+$font-family: "Montserrat", sans-serif;
+$second-family: "Poppins", sans-serif;
+
+// colors
+$deep_blue: rgb(19, 59, 92);
+$dark_grey: rgb(34, 40, 49);
+$white_colour: white;
+
+// buttons
+
+@mixin sign_up {
+    width: 160px;
+    height: 50px;
+    border: 1px solid $deep_blue;
+    background-color: $deep_blue;
+    border-radius: 25px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+
+    &:hover {
+        border: 2px solid $dark_grey;
+        background-color: rgba(255, 255, 255, 0.2);
+        color: $dark_grey;
+    }
+}
+
+@mixin search {
+    width: 224px;
+    height: 60px;
+    border: 1px solid $deep_blue;
+    background-color: $deep_blue;
+    border-radius: 30px;    
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+
+
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+
+    &:hover {
+        border: 2px solid $dark_grey;
+        background-color: rgba(255, 255, 255, 0.35);
+        color: $dark_grey;
+    }
+}
+
+// display styles
+
+@mixin flex ($justify:center, $items:center, $direction:row) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $items;
+    flex-direction: $direction;
+}

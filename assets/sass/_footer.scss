@@ -1,0 +1,37 @@
+@import "./styles";
+
+footer {
+    width: 100vw;
+    margin-top: 100px;
+    padding: 42px;
+    @include flex(space-between);
+    background-color: $deep_blue;
+    flex-wrap: wrap;
+    gap: 50px;
+
+    .footer_info_holder {
+        max-width: 240px;
+        height: 150px;
+        @include flex(space-between, baseline, column);
+
+        img {
+            width: 140px;
+        }
+
+        p{
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 13px;
+            color: $white_colour;
+        }
+
+        h3{
+            font-family: $font-family;
+            font-weight: 700;
+            font-size: 16px;
+            text-align: center;
+            color: $white_colour;
+        }
+    }
+}
+

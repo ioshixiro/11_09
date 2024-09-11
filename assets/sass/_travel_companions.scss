@@ -1,0 +1,51 @@
+.travel_companions {
+    width: 100vw;
+    min-height: 600px;
+    @include flex(center, center, column);
+    position: relative;
+    overflow: hidden;
+    padding-top: 80px;
+
+    #travel_companion_img {
+        border: 1px solid black;
+        height: 600px;
+        width: auto;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -10;
+    }
+
+    h1 {
+        max-width: 750px;
+        font-family: $font-family;
+        font-weight: 700;
+        font-size: 72px;
+        text-align: center;
+        color: $white_colour;
+    }
+
+    h5 {
+        font-family: $font-family;
+        font-weight: 600;
+        font-size: 18px;
+        text-align: center;
+        color: $white_colour;
+        margin-top: 30px;
+    }
+
+    #travel_companion_2img {
+        width: 80%;
+        margin-top: 90px;
+    }
+
+    h4 {
+        font-family: $font-family;
+        font-weight: 600;
+        font-size: 32px;
+        color: $white_colour;
+        margin-top: 100px;
+        margin-bottom: 35px;
+    }
+}
